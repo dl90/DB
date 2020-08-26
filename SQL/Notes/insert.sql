@@ -5,7 +5,7 @@
 -- duration   TIME
 -- kb_size    INTEGER
 INSERT INTO recorded_conversation (date_time, person, subject, duration, kb_size)
-VALUES 
+VALUES
 ('2020-1-1 07:30:00',   'John',   'Work',   '00:05:00',   384 ),
 ('2020-1-1 09:00:00',   'Josh',   'Work',   '00:02:00',   300 ),
 ('2020-1-1 11:50:00',   'Jones',  'Client', '00:10:00',   700 ),

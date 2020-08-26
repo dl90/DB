@@ -1,3 +1,5 @@
+# MongoDB
+
 ```mongo
 mongo
 
@@ -21,13 +23,12 @@ things = [
 db.myCollection.insert(things)
 db.myCollection.bulkWrite([
   { insertOne: { name: "test3", data:"hij" } },
-  { updateOne : { 
+  { updateOne : {
     filter: { name : "test1" },
     update: { $set : { data: "123" } }
     }
   }
 ])
-
 ```
 
 `_id` is the primary key for each document. If not specifically assigned, an automatically generated `ObjectId` will be assigned.
@@ -38,10 +39,11 @@ x.getTimestamp()
 ```
 
 CRUD OPS
+
 ```mongo
 db.myCollection.insert()
 db.myCollection.insertOne()
-db.myCollection.insertMaany()
+db.myCollection.insertMany()
 
 db.myCollection.findOne()
 db.myCollection.find()

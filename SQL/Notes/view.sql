@@ -3,11 +3,11 @@
 -- You can created views based on existing views
 
 -- CREATE [OR REPLACE] VIEW [db_name.]view_name [(column_list)]
-CREATE VIEW view_name AS 
-  SELECT 
-    customerName, 
-    checkNumber, 
-    paymentDate, 
+CREATE VIEW view_name AS
+  SELECT
+    customerName,
+    checkNumber,
+    paymentDate,
     amount
   FROM
     customers
