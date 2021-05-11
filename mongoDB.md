@@ -1,6 +1,9 @@
 # MongoDB
 
-```mongo
+```bash
+brew services start mongodb-community@4.4
+brew services stop mongodb-community@4.4
+
 mongo
 
 show dbs
@@ -14,7 +17,7 @@ newDoc = { "field": "value"}
 db.myCollection.insertOne(newDoc)
 ```
 
-```mongo
+```bash
 things = [
   { name: "test1", data:"abc" },
   { name: "test2", data:"efg" }
@@ -33,14 +36,14 @@ db.myCollection.bulkWrite([
 
 `_id` is the primary key for each document. If not specifically assigned, an automatically generated `ObjectId` will be assigned.
 
-```mongo
+```bash
 x = ObjectId()
 x.getTimestamp()
 ```
 
 CRUD OPS
 
-```mongo
+```bash
 db.myCollection.insert()
 db.myCollection.insertOne()
 db.myCollection.insertMany()
@@ -67,7 +70,7 @@ db.myCollection.remove()
 | $and       | &&     |
 | $or        | \|\|   |
 
-```mongo
+```bash
 db.myCollection.find({
   $and: [
     { name: "test1"},
