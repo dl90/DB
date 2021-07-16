@@ -25,3 +25,7 @@ SELECT users.email, AVG(ratings.number_of_stars) AS average_rating
 FROM ratings JOIN users
 ON ratings.users_id = users.id
 GROUP BY users.id
+
+SELECT pop FROM City
+GROUP BY Country
+HAVING COUNT(pop) > 1000000;
